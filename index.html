@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 anni</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="intro">
+    <p>[05.05.2026]</p>
+    <div id="button" onclick="start()"><p>[Cliccami<3]</p></div>
+    <p>[Poi dovrai ruotare il telefono]</p>
+  </div>
+
+  <video id="video" playsinline loop>
+    <source src="Assets/Images/Prima_prova_compressed.mp4" type="video/mp4">
+  </video>
+
+  <script>
+    function start() {
+      document.getElementById('intro').style.display = 'none';
+      const video = document.getElementById('video');
+      video.style.display = 'block';
+      video.play();
+    }
+  </script>
+</body>
+</html>
